@@ -23,3 +23,8 @@ solution(
     [7, 7],
   ]
 );
+
+
+const str = "Hello, world!";
+const substr1 = str.substring(0, 5); // "Hello"
+const substr2 = str.substring(7); // "world!"
