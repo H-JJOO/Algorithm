@@ -7,3 +7,4 @@ function solution(arr, idx) {
 }
 
 solution([0, 0, 0, 1]);
+
