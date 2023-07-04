@@ -4,11 +4,11 @@ function solution(polynomial) {
   const xNum = arr
     .filter((n) => n.includes("x"))
     .map((n) => n.replace("x", "") || "1")
-    .reduce((acc, cur) => acc + Number(cur, 10), 0);
+    .reduce((acc, cur) => acc + Number(cur), 0);
 
   const num = arr
     .filter((n) => !isNaN(n))
-    .reduce((acc, cur) => acc + Number(cur, 10), 0);
+    .reduce((acc, cur) => acc + Number(cur), 0);
 
   let answer = [];
   if (xNum) {
