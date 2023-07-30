@@ -1,8 +1,8 @@
 function solution(name, yearning, photo) {
   return photo.map((group) =>
-    group.reduce((acc, val) => {
-      const yearnScore = yearning[name.indexOf(val)] || 0;
-      return acc + yearnScore;
+    group.reduce((acc, value) => {
+      const score = yearning[name.indexOf(value)] || 0;
+      return acc + score;
     }, 0)
   );
 }
